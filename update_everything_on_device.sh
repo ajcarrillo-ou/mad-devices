@@ -2,7 +2,7 @@
 dir="forcer"
 
 echo "Welcome to fucking force updater"
-cd /sdcard
+cd /storage/emulated
 
 if [[ ! -e $dir ]]; then
     echo "No $dir directory found, creating"
