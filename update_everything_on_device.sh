@@ -23,7 +23,7 @@ rm *.apk
 echo "Download PogoDroid too!"
 /system/bin/curl -k -L --progress-bar https://www.maddev.de/apk/PogoDroid.apk -o pogodroid.apk
 echo "RGC too!"
-/system/bin/curl -k -L --progress-bar https://raw.githubusercontent.com/Map-A-Droid/MAD/master/APK/RemoteGpsController.>
+/system/bin/curl -k -L --progress-bar https://raw.githubusercontent.com/Map-A-Droid/MAD/master/APK/RemoteGpsController.apk -o rgc.apk
 echo "Killing PogoDroid, RGC and Pokemon GO"
 /system/bin/killall com.mad.pogodroid
 /system/bin/am force-stop de.grennith.rgc.remotegpscontroller
