@@ -34,12 +34,12 @@ echo "Killing PogoDroid, RGC and Pokemon GO"
 chmod 775 /data/local/tmp/forcer/pogodroid.apk
 chmod 775 /data/local/tmp/forcer/rgc.apk
 
-echo "Installing everything"
+# echo "Installing everything"
 # echo "pogo.apk"
 # su -c 'pm install -r /data/local/tmp/forcer/pogo.apk'
-echo "pogodroid.apk"
-su -c 'pm install -r /data/local/tmp/forcer/pogodroid.apk'
-echo "rgc.apk"
-su -c 'pm install -r /data/local/tmp/forcer/rgc.apk'
-echo "Done, rebooting"
-reboot
+# echo "pogodroid.apk"
+# su -c 'pm install -r /data/local/tmp/forcer/pogodroid.apk'
+# echo "rgc.apk"
+# su -c 'pm install -r /data/local/tmp/forcer/rgc.apk'
+# echo "Done, rebooting"
+# reboot
