@@ -12,7 +12,7 @@ elif [[ ! -d $dir ]]; then
     exit 1
 fi
 
-chmod 775 /sdcard/forcer
+chmod 775 /storage/emulated/forcer
 
 cd $dir/
 echo "Removing every .apk file"
@@ -29,9 +29,9 @@ echo "Killing PogoDroid, RGC and Pokemon GO"
 /system/bin/am force-stop de.grennith.rgc.remotegpscontroller
 /system/bin/killall com.nianticlabs.pokemongo
 
-#chmod 774 /sdcard/forcer/pogo.apk
-chmod 774 /sdcard/forcer/pogodroid.apk
-chmod 774 /sdcard/forcer/rgc.apk
+#chmod 774 /storage/emulated/pogo.apk
+chmod 774 /storage/emulated/forcer/pogodroid.apk
+chmod 774 /storage/emulated/forcer/rgc.apk
 
 echo "Installing everything"
 # echo "pogo.apk"
