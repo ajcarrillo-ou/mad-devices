@@ -31,8 +31,8 @@ echo "Killing PogoDroid, RGC and Pokemon GO"
 /system/bin/killall com.nianticlabs.pokemongo
 
 #chmod 774 /data/local/tmp/forcer/pogo.apk
-chmod 774 /data/local/tmp/forcer/pogodroid.apk
-chmod 774 /data/local/tmp/forcer/rgc.apk
+chmod 775 /data/local/tmp/forcer/pogodroid.apk
+chmod 775 /data/local/tmp/forcer/rgc.apk
 
 echo "Installing everything"
 # echo "pogo.apk"
