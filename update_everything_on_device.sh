@@ -1,4 +1,5 @@
 #!/system/bin/sh
+# MUST RUN AS ROOT
 dir="/data/local/tmp/forcer"
 
 echo "Welcome to fucking force updater"
@@ -35,10 +36,10 @@ chmod 774 /data/local/tmp/forcer/rgc.apk
 
 echo "Installing everything"
 # echo "pogo.apk"
-# su -c 'dir="/data/local/tmp/forcer" && pm install -r $dir/pogo.apk'
+# su -c 'pm install -r /data/local/tmp/forcer/pogo.apk'
 echo "pogodroid.apk"
-su -c 'dir="/data/local/tmp/forcer" && pm install -r $dir/pogodroid.apk'
+su -c 'pm install -r /data/local/tmp/forcer/pogodroid.apk'
 echo "rgc.apk"
-su -c 'dir="/data/local/tmp/forcer" && pm install -r $dir/rgc.apk'
+su -c 'pm install -r /data/local/tmp/forcer/rgc.apk'
 echo "Done, rebooting"
 reboot
