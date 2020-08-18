@@ -35,10 +35,10 @@ chmod 774 /data/local/tmp/forcer/rgc.apk
 
 echo "Installing everything"
 # echo "pogo.apk"
-# pm install -r pogo.apk
+# su -c 'pm install -r pogo.apk'
 echo "pogodroid.apk"
-pm install -r pogodroid.apk
+su -c 'pm install -r pogodroid.apk'
 echo "rgc.apk"
-pm install -r rgc.apk
+su -c 'pm install -r rgc.apk'
 echo "Done, rebooting"
 reboot
