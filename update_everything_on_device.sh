@@ -1,18 +1,18 @@
 #!/system/bin/sh
-dir="forcer"
+dir="/data/local/tmp/forcer"
 
 echo "Welcome to fucking force updater"
-cd /storage/emulated
+cd /data/local/tmp
 
 if [[ ! -e $dir ]]; then
     echo "No $dir directory found, creating"
-    mkdir $dir
+    mkdir -p $dir
 elif [[ ! -d $dir ]]; then
     echo "$dir already exists but is not a directory" 1>&2
     exit 1
 fi
 
-chmod 775 /storage/emulated/forcer
+chmod 775 /data/local/tmp/forcer
 
 cd $dir/
 echo "Removing every .apk file"
@@ -29,9 +29,9 @@ echo "Killing PogoDroid, RGC and Pokemon GO"
 /system/bin/am force-stop de.grennith.rgc.remotegpscontroller
 /system/bin/killall com.nianticlabs.pokemongo
 
-#chmod 774 /storage/emulated/pogo.apk
-chmod 774 /storage/emulated/forcer/pogodroid.apk
-chmod 774 /storage/emulated/forcer/rgc.apk
+#chmod 774 /data/local/tmp/forcer/pogo.apk
+chmod 774 /data/local/tmp/forcer/pogodroid.apk
+chmod 774 /data/local/tmp/forcer/rgc.apk
 
 echo "Installing everything"
 # echo "pogo.apk"
